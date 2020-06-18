@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+</head>
+<body style="margin-left: 300px;margin-top: 0;">
+<h1>Rejestracja</h1>
+<p>Imię</p>
+<form method="post" action="url">
+    <input type="text" class="form-control" name="firstName" size="100" placeholder="Wpisz imię">
+    <p>Nazwisko</p>
+    <input type="text" class="form-control" name="lastName" size="100" placeholder="Wpisz nazwisko">
+    <p>Płeć</p>
+    <div class="gender">
+        <div class="gender 1">
+            <input id="1" name="woman" type="radio" class="gender 1" checked required>
+            <label class="custom-control-label" for="1">Kobieta</label>
+        </div>
+        <div class="gender 2">
+            <input id="2" name="woman" type="radio" class="gender 2" checked required>
+            <label class="custom-control-label" for="2">Mężczyzna</label>
+        </div>
+    </div>
+    <p>Adres email</p>
+    <input type="email" name="emailAdres" size="100" placeholder="Wpisz adres email">
+    <p>Hasło</p>
+    <input type="password" name="password" maxlength="8" size="100" placeholder="Hasło">
+    <h6 class="altColor">Min. 8 znaków</h6>
+    <h2></h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Miasto</th>
+            <th>Województwo</th>
+            <th>Kod pocztowy</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="text" name="city" size="50"></td>
+            <td> <select name="district">
+                <option selected="selected" disabled="disabled">Wybierz...</option>
+                <option>dolnośląskie</option>
+                <option>warmińskomazurskie</option>
+                <option>świętokrzyskie</option>
+            </select></td>
+            <td> <input type="text" name="postCode"></td>
+        </tr>
+        </tbody>
+    </table>
+    <h3></h3>
+    <div class="footer">
+        <div class="point 1">
+            <input id="A" name="akceptation" type="checkbox" class="point 1" checked required>
+            <label class="custom-control-label" for="A">Akceptuję <a href="https://www.regulamin.pl">regulamin</a></label>
+        </div>
+        <div class="point 2">
+            <input id="B" name="agreement" type="checkbox" class="point 2" checked required>
+            <label class="custom-control-label" for="B">Wyrażam zgodę na otrzymywanie informacji marketingowych</label>
+        </div>
+    </div>
+    <div class="registration">
+        <button type="submit" class="registration">Rejestruj</button>
+    </div>
+</form>
+</body>
+</html>
